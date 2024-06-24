@@ -14,7 +14,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'f5f07355-9ee9-4463-9e48-6e0519308dc7', path: 'jai balayya', url: 'http://13.126.175.172:8080')], contextPath: 'new1', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'f5f07355-9ee9-4463-9e48-6e0519308dc7', path: '', url: 'http://13.126.175.172:8080')], contextPath: 'jai ntr', war: '**/*.war'
             }
         }
     }
